@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Print some system information
+
 echo "=== System information ==="
 echo "Hostname: $(hostname)"
 echo "Date: $(date)"
