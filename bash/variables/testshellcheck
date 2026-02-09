@@ -1,0 +1,4 @@
+#!/bin/bash
+MYVAR="a file name"
+touch $MYVAR  # sc should warn about this
+rm "${MYVAR}" # this should pass w/o warning
