@@ -1,0 +1,7 @@
+#!/bin/bash
+VAR="Hello world world"
+echo "Working on 'world'"
+echo "replace first occurence  ${VAR/world/Welt}"      
+echo "replace *all* occurences ${VAR//world/Welt}"     
+echo "delete all occurences    ${VAR//world/}"         
+

@@ -1,0 +1,5 @@
+#!/bin/bash
+VAR=$1
+name=${VAR:?error}
+echo "The name is ${name}"
+

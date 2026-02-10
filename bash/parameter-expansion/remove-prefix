@@ -1,0 +1,8 @@
+#!/bin/bash
+filepath="/home/user/archive.tar.gz"
+
+echo "${filepath#*/}"     # note the slash
+echo "${filepath##*/}"
+
+echo "${filepath#*.}"
+echo "${filepath##*.}"

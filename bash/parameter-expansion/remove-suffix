@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Experiment with removing short and long suffixes 
+
+filename=${1:-archive.tar.gz}       # provide default value
+echo "filename      : ${filename}"
+echo "Strip .gz     : ${filename%.*}"   # remove shortest match
+echo "Strip .tar.gz : ${filename%%.*}"  # remove longest match
+

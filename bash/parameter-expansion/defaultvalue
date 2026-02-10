@@ -1,0 +1,8 @@
+#!/bin/bash
+
+name=$1
+echo "Hello, ${name}"
+echo "Hello, ${name:-User}"
+
+echo "Hello, ${name:=Sir}"
+
