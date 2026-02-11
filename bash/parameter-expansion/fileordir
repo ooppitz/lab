@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# tests if the parameter is a file or a directory
+
+path=$1
+
+if [[ -z $1 || $1 == "--help" ]] ; then echo "Usage: fileordir <path> | fileordir --help" ; exit 1; fi
+
+ if [[ ! -e $1 ]] ; then echo "File not found" ; exit 1; fi
+
+if [[ -f ${path} ]] ; then
+    echo "'${1}' is a file".
+else
+    echo "'${1}' is a directory".
+fi
+if [[ -L ${path} ]] ; then echo "'${1}' is a link" ; fi
