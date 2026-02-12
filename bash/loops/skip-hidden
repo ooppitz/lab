@@ -1,0 +1,6 @@
+#!/bin/bash
+for file in .* * ; do
+    [[ "$file" == .* ]] && echo "hidden file ${file}" && continue  # A && B ... if A then B
+    [[ -f $file ]] || continue       # A || B ... if A skip B
+    echo "$file"
+done

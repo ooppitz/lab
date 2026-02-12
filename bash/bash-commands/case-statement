@@ -2,16 +2,16 @@
 
 case $1 in
     start)
-	echo "Starting..."
-	;;
+        echo "Starting..."
+        ;;
     restart)
-	echo "Restarting..."
-	;;
+        echo "Restarting..."
+        ;;
     stop)
-	echo "Stopping..."
-	;;
+        echo "Stopping..."
+        ;;
     *)
-	echo "Doing default thin..."
-	;;
+        echo "Doing default thing..."
+        ;;
 esac
 

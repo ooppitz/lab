@@ -1,0 +1,29 @@
+#!/bin/bash
+
+get_long_extension(){
+    local filename=$1
+    echo "${filename#*.}"
+}
+
+get_short_extension(){
+    local filename=$1
+    echo "${filename##*.}"
+}
+
+
+long=0
+params=$@
+for p in ${params} ; do
+    [[ ${p} == "--long" ]] && long=1 && continue
+    file=$p
+done
+
+if [[ ${long} -eq 1 ]] ; then
+    extension=$(get_long_extension ${file})
+else
+    extension=$(get_short_extension ${file})
+fi
+    
+echo -e "The extension is ${extension}"
+
+

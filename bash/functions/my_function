@@ -1,0 +1,15 @@
+#!/bin/bash
+my_function(){
+    name="Changed"
+}
+
+my_other_function(){
+    local name
+    name="Also changed"   # does not affect the global variable
+}
+
+
+name="Oliver"
+my_other_function
+echo "${name}"
+

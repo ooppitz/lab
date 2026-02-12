@@ -1,0 +1,15 @@
+#!/bin/bash
+for name in Alice Bob Charlie ; do
+    echo ${name}
+done    
+
+for i in {1..5} ; do
+   echo "Count ${i}"
+done
+
+for file in *.txt; do
+    [[ -f "${file}" ]] || continue
+    echo "Processing: ${file}"
+done
+
+

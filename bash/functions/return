@@ -1,0 +1,10 @@
+#!/bin/bash
+
+some_func(){
+    ls non_existent_file
+    return    # returns the status of ls (in this case 2)
+}
+some_func
+echo "Return value=$?"
+
+

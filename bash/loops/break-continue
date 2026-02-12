@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+var=0
+while [[ var -lt 10 ]] ; do
+    ((var++))
+    [[ var -eq 3 ]] && continue
+    echo "${var}"
+    [[ var -eq 7 ]] && break
+done

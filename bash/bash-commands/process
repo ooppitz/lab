@@ -1,0 +1,5 @@
+#!/bin/bash
+for file in *.txt ; do
+    [[ -f ${file} ]] || break
+    echo "processing ${file}..."
+done
